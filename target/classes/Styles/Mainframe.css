@@ -1,0 +1,97 @@
+.container{
+    -fx-background-color: #121212;
+
+    -fx-background-image:url(../img/background.jpg);
+    -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 150% 200%; /* change the size to cover */
+}
+
+.logo-container{
+    -fx-background-color: #1F1B24;
+    -fx-alignment: center;
+
+    -fx-background-image:url(../img/background.jpg);
+    -fx-background-position: center left;
+    -fx-background-repeat: stretch;
+    -fx-background-size: 500% 150%; /* change the size to cover */
+
+
+
+}
+.logo-container Text{
+    -fx-font-size: 2em;
+    -fx-fill: white;
+    -fx-font-family: "Bookshelf Symbol 7";
+}
+
+/* Set dark theme for table */
+/* Set dark theme for table */
+.root {
+    -fx-base: #121212;
+    -fx-background-color:#121212;
+    -fx-control-inner-background: #292929;
+    -fx-text-fill: #d3d3d3;
+    -fx-font-family: Arial;
+}
+
+.table-view {
+    -fx-selection-bar: #2d2d2d;
+    -fx-selection-bar-non-focused: #353535;
+    -fx-focus-color: #3a3a3a;
+    -fx-faint-focus-color: #3a3a3a;
+}
+
+.table-row-cell {
+    -fx-text-fill: #d3d3d3;
+    -fx-background-color: #1d1d1d;
+    -fx-background-insets: 0;
+    -fx-padding: 5 0 5 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #252525;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #2d2d2d;
+}
+
+.table-cell {
+    -fx-padding: 5 10 5 10;
+}
+.table-view .table-cell {
+    -fx-font-family: sans-serif;
+    -fx-font-size: 14;
+}
+
+.dark-table {
+}
+.my-text-field {
+    -fx-prompt-text-fill: #7a7a7a;
+}
+.paneDownload{
+
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-text-fill: white;
+}
+.paneDownload pausebtn{
+    -fx-translate-x: 362;
+    -fx-translate-y: 43;
+
+}
+
+ Label{
+    -fx-text-fill: #797979;
+}
+ Button{
+    -fx-text-fill: #797979;
+}
+.progress-bar {
+    -fx-accent: #5f54a4;
+}
+.button-28{
+    -fx-font-size: 12px;
+
+}
+

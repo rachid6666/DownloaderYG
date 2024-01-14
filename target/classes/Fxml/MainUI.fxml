@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="container" stylesheets="@../Styles/Mainframe.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.downloader.Controllers.MainController">
+    <VBox fx:id="vbox" layoutX="149.0" layoutY="92.0" prefHeight="308.0" prefWidth="451.0" styleClass="button-28" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="92.0" />
+
+       <VBox alignment="BASELINE_RIGHT" layoutX="21.0" layoutY="79.0" prefHeight="400.0" prefWidth="151.0" styleClass="logo-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <FontAwesomeIconView fill="WHITE" glyphName="DOWNLOAD" size="50" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" YG " />
+    </VBox>
+    <Pane layoutX="172.0" layoutY="26.0" prefHeight="50.0" prefWidth="390.0">
+        <TextField fx:id="urlTxt" alignment="BOTTOM_LEFT" layoutY="23.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="267.0" promptText="Paste the URL here" styleClass="my-text-field">
+         <effect>
+            <Blend />
+         </effect></TextField>
+      <Button fx:id="addbtn" layoutX="274.0" layoutY="23.0" mnemonicParsing="false" onAction="#clicked" prefHeight="10.0" prefWidth="24.0" text="+" textAlignment="CENTER">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="downloadAll" layoutX="309.0" layoutY="24.0" mnemonicParsing="false" onAction="#downloadall" prefHeight="23.0" prefWidth="103.0" text="Download All" />
+    </Pane>
+</AnchorPane>
